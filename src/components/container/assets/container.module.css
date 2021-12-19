@@ -1,0 +1,14 @@
+.container {
+  max-width: 1014px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+  background: var(--container-color)
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
