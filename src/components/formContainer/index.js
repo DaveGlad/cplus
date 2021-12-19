@@ -3,7 +3,7 @@ import s from './assets/formContainer.module.css'
 
 const FormContainer = ({ children }) => {
   return (
-    <section className={`section
+    <section className={`
     ${s.formContainer}`}>
       {children}
     </section>
