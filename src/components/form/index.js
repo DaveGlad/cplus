@@ -3,6 +3,7 @@ import s from './assets/form.module.css'
 import Remboursement from '@/src/screens/remboursement'
 import Profile from '@/src/screens/profile'
 import Family from '@/src/screens/family'
+import Accroche from '@/src/screens/acroche'
 
 const Form = ({ handleClick, current, setCurrent }) => {
 
@@ -17,6 +18,7 @@ const Form = ({ handleClick, current, setCurrent }) => {
       {current === 1 && <Remboursement />}
       {current === 2 && <Profile />}
       {current === 3 && <Family />}
+      {current === 4 && <Accroche />}
 
 
       <div className={s.row}>

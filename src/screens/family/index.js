@@ -4,6 +4,9 @@ import Image from 'next/image'
 import WhoDoYouWantToInsure from '@/src/components/familyForm/WhoDoYouWantToInsure'
 import RegimeConjoint from '@/src/components/familyForm/regimeConjoint'
 import NumberChildren from '@/src/components/familyForm/numberChildren'
+import DateFirstChild from '@/src/components/familyForm/dateFirstChild'
+import DateSecondChild from '@/src/components/familyForm/dateSecondChild'
+import NumberAnimalCompagne from '@/src/components/familyForm/numberAnimalCompagne'
 const Family = () => {
   return (
     <React.Fragment>
@@ -14,6 +17,9 @@ const Family = () => {
       <WhoDoYouWantToInsure />
       <RegimeConjoint />
       <NumberChildren />
+      <DateFirstChild />
+      <DateSecondChild />
+      <NumberAnimalCompagne />
     </React.Fragment>
   )
 }

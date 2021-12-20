@@ -19,13 +19,13 @@ const reducer = (current, action) => {
       break;
   }
 }
-const NumberChildren = () => {
+const NumberAnimalCompagne = () => {
 
   const [count, dispatch] = useReducer(reducer, initialState,)
 
   return (
     <div className={s.content}>
-      <h3>Nombre d’enfants à assurer ?</h3>
+      <h3>🐶🐱 Avez-vous un animal de <br /> compaGNIE ?</h3>
       <div className={s.count}>
         <div className={s.row}>
           <button onClick={() => dispatch('decrement')}>-</button>
@@ -37,4 +37,4 @@ const NumberChildren = () => {
   )
 }
 
-export default NumberChildren
+export default NumberAnimalCompagne

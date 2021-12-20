@@ -9,11 +9,11 @@ const Header = () => {
 
         <div className={s.menu}>
           <div className={s.logo}>
-            <Image src="/images/logo/logo.svg" width={80} height={40} />
+            <Image src="/images/logo/logo.svg" width={80} height={40} layout='responsive' />
           </div>
 
           <div className={s.logo_center}>
-            <Image src="/images/logo/logo_filgaro.svg" width={60} height={30} />
+            <Image src="/images/logo/logo_filgaro.svg" width={60} height={30} layout='responsive' />
           </div>
 
           <div className={s.contact}>

@@ -1,0 +1,64 @@
+.content {
+  margin-top: 5%;
+  border: 1px solid #E2C5D7;
+  box-shadow: 8px 8px 16px 4px rgba(137, 143, 150, 0.04);
+  border-radius: 10px;
+}
+
+.content h3 {
+  font-size: var(--small-font-size) !important;
+  text-transform: uppercase;
+  padding: 3% 0;
+}
+
+/*  */
+.row {
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  justify-content: space-between;
+
+}
+
+.row .input {
+  width: 90%;
+  padding: 3px 0;
+  border: 1px solid #E2C5D7;
+  margin: 0 0.5em;
+  border-radius: 5px;
+}
+
+.row input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--title-color);
+  padding: 5px;
+}
+
+.adress input::placeholder,
+.input input::placeholder {
+  text-align: center;
+}
+
+/*  */
+
+.adress {
+  border: 1px solid #E2C5D7;
+  width: 95%;
+  border-radius: 5px;
+  padding: 3px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.adress input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--title-color);
+  padding: 5px;
+}
