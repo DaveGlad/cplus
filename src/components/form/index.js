@@ -2,6 +2,7 @@ import React from 'react'
 import s from './assets/form.module.css'
 import Remboursement from '@/src/screens/remboursement'
 import Profile from '@/src/screens/profile'
+import Family from '@/src/screens/family'
 
 const Form = ({ handleClick, current, setCurrent }) => {
 
@@ -15,6 +16,7 @@ const Form = ({ handleClick, current, setCurrent }) => {
 
       {current === 1 && <Remboursement />}
       {current === 2 && <Profile />}
+      {current === 3 && <Family />}
 
 
       <div className={s.row}>
