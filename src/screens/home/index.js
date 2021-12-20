@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Container>
       <FormContainer>
-        {current === 1 && <Assuarnce />}
+        <Assuarnce current={current} />
         <Form
           handleClick={handleClick}
           current={current}

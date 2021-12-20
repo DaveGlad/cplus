@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import s from './assets/form.module.css'
 import Remboursement from '@/src/screens/remboursement'
 import Profile from '@/src/screens/profile'
@@ -19,7 +19,7 @@ const Form = ({ handleClick, current, setCurrent }) => {
 
       <div className={s.row}>
         <div className={s.left}>
-          {current === 2 && <button onClick={handleClickPrev}>RETOUR</button>}
+          {current !== 1 && <button onClick={handleClickPrev}>RETOUR</button>}
         </div>
         <div className={s.right}>
           <button onClick={handleClick}>CONTINUER</button>
