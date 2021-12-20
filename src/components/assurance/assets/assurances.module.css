@@ -10,6 +10,8 @@
   color: var(--title-color);
   font-size: var(--h2-font-size);
   text-transform: uppercase;
+  /* padding: 0 !important;
+  margin: 0 !important; */
 }
 
 .content h3 {

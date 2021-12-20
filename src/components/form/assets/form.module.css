@@ -22,3 +22,31 @@
   text-transform: uppercase;
   padding: 3% 0;
 }
+
+/*  */
+
+.row {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: var(--smaller-font-size);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.row .left button {
+  background: #C4C4C4;
+  padding: 10px 25px;
+}
+
+.row .right button {
+  background: #A3CE41;
+}

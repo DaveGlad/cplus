@@ -1,0 +1,30 @@
+import React from 'react'
+import s from '@/src/components/form/assets/form.module.css'
+
+const Optique = () => {
+  return (
+    <div className={s.content}>
+      <h3>👓 OPTIQUE</h3>
+
+      {/* RADIO */}
+      <div className="over-hide z-bigger">
+        <input className="checkbox-tools" type="radio" name="o" id="o-1" checked />
+        <label className="for-checkbox-tools" htmlFor="o-1">
+          Economique
+        </label>
+        <input className="checkbox-tools" type="radio" name="o" id="o-2" checked />
+        <label className="for-checkbox-tools" htmlFor="o-2">
+          Intermédiaire
+        </label>
+
+        <input className="checkbox-tools" type="radio" name="o" id="o-3" checked />
+        <label className="for-checkbox-tools" htmlFor="o-3">
+          Optimum
+        </label>
+      </div>
+      {/* RADIO */}
+    </div>
+  )
+}
+
+export default Optique
