@@ -17,7 +17,7 @@ const InfoUser = () => {
       <h3>📍ADRESSE</h3>
       <div className={s.adress}>
         <Autocomplete
-          apiKey='AIzaSyB4IkCzSERF2dIeRuKkmFJfWLSf_g16TiY'
+          apiKey='AIzaSyDDXHPNnPozBzqWy3hTreGUyn3WQ_Tr4F8'
           onPlaceSelected={(place) => {
             console.log(place);
           }}
