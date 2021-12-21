@@ -19,10 +19,13 @@ const reducer = (current, action) => {
       break;
   }
 }
-const NumberChildren = () => {
+const NumberChildren = ({ handleAddLink }) => {
 
   const [count, dispatch] = useReducer(reducer, initialState,)
-
+  const handlClickAdd = () => {
+    dispatch('increment')
+    handleAddLink()
+  }
   return (
     <div className={s.content}>
       <h3>Nombre d’enfants à assurer ?</h3>
@@ -30,7 +33,7 @@ const NumberChildren = () => {
         <div className={s.row}>
           <button onClick={() => dispatch('decrement')}>-</button>
           <button>{count}</button>
-          <button onClick={() => dispatch('increment')}>+</button>
+          <button onClick={handlClickAdd}>+</button>
         </div>
       </div>
     </div>

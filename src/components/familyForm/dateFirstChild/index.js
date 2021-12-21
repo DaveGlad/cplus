@@ -1,27 +1,45 @@
 import React from 'react'
-import s from '@/src/components/form/assets/form.module.css'
+import s from './assets/childe.module.css'
 
-const DateFirstChild = () => {
+const DateChild = ({ form, setForm }) => {
+
+  const onChange = (index, event) => {
+    event.preventDefault()
+    setForm(prev => {
+      prev.map((item, i) => {
+        if (i !== index) {
+          return item
+        }
+        return {
+          ...item,
+          [event.target.name]: event.target.value
+        }
+      })
+    })
+  }
+
   return (
-    <div className={s.content}>
-      <h3>🗓 DATE DE NAISSANCE DE VOTRE 1ER ENFANT ?</h3>
-      <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="date-f-c" id="date-1-f-c" />
-        <label className="for-checkbox-tools" htmlFor="date-1-f-c">
-          jour
-        </label>
-        <input className="checkbox-tools" type="radio" name="date-f-c" id="date-2-f-c" />
-        <label className="for-checkbox-tools" htmlFor="date-2-f-c">
-          mois
-        </label>
-
-        <input className="checkbox-tools" type="radio" name="date-f-c" id="date-3-f-c" />
-        <label className="for-checkbox-tools" htmlFor="date-3-f-c">
-          année
-        </label>
-      </div>
-    </div>
+    <React.Fragment>
+      {
+        form?.map((item, index) => (
+          <div className={s.content}>
+            <h3>🗓 DATE DE NAISSANCE DE VOTRE {index + 1}E ENFANT ?</h3>
+            <div className={s.row}>
+              <div className={s.input}>
+                <input type="number" name="" id="" placeholder='jour' />
+              </div>
+              <div className={s.input}>
+                <input type="number" name="" id="" placeholder='mois' />
+              </div>
+              <div className={s.input}>
+                <input type="number" name="" id="" placeholder='année' />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </React.Fragment>
   )
 }
 
-export default DateFirstChild
+export default DateChild

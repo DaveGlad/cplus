@@ -1,13 +1,12 @@
-import React, { useReducer } from 'react'
+import React, { useState, useReducer } from 'react'
 import s from './assets/family.module.css'
 import Image from 'next/image'
 import WhoDoYouWantToInsure from '@/src/components/familyForm/WhoDoYouWantToInsure'
 import RegimeConjoint from '@/src/components/familyForm/regimeConjoint'
 import NumberChildren from '@/src/components/familyForm/numberChildren'
-import DateFirstChild from '@/src/components/familyForm/dateFirstChild'
-import DateSecondChild from '@/src/components/familyForm/dateSecondChild'
 import NumberAnimalCompagne from '@/src/components/familyForm/numberAnimalCompagne'
 import FaqAnimalCompagne from '@/src/components/familyForm/faqAnimalCompagnie'
+import DateChild from '@/src/components/familyForm/dateFirstChild'
 
 const initialState = {
   vous: false,
@@ -68,7 +67,7 @@ const reducer = (state, action) => {
         faqAnimalDeCompagne: false,
       }
     case 'increment':
-      if (state?.increment >= 15) {
+      if (state?.increment >= 5) {
         return state?.increment
       }
       return state + 1
@@ -83,6 +82,18 @@ const reducer = (state, action) => {
 }
 
 const Family = () => {
+  const [form, setForm] = useState([])
+
+  const handleAddLink = (e) => {
+    const childrenState = {
+      t: "",
+      a: ""
+    }
+
+    setForm(prev => [...prev, childrenState])
+  }
+
+  //reducer
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
@@ -93,9 +104,13 @@ const Family = () => {
 
       <WhoDoYouWantToInsure dispatch={dispatch} />
       {state?.vousEtVotreConjoint && <RegimeConjoint />}
-      {state?.enfant && <NumberChildren />}
-      {state?.enfant && <DateFirstChild />}
-      {/* <DateSecondChild /> */}
+      {state?.enfant && <NumberChildren
+        handleAddLink={handleAddLink}
+      />}
+      {state?.enfant && <DateChild
+        form={form}
+        setForm={setForm}
+      />}
       <FaqAnimalCompagne dispatch={dispatch} />
       {state?.faqAnimalDeCompagne && <NumberAnimalCompagne />}
     </React.Fragment>
