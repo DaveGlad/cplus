@@ -1,0 +1,39 @@
+.content {
+  margin-top: 5%;
+  border: 1px solid #E2C5D7;
+  box-shadow: 8px 8px 16px 4px rgba(137, 143, 150, 0.04);
+  border-radius: 10px;
+}
+
+.content h3 {
+  font-size: var(--small-font-size) !important;
+  text-transform: uppercase;
+  padding: 3% 0;
+}
+
+/*  */
+
+.row {
+  width: 60%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  font-size: var(--smaller-font-size);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+
+.count .row button:nth-child(1) {
+  background: var(--title-color);
+  color: #fff;
+
+}

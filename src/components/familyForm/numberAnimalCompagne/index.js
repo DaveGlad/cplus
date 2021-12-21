@@ -25,7 +25,7 @@ const NumberAnimalCompagne = () => {
 
   return (
     <div className={s.content}>
-      <h3>🐶🐱 Avez-vous un animal de <br /> compaGNIE ?</h3>
+      <h3>🐶🐱 Combien ?</h3>
       <div className={s.count}>
         <div className={s.row}>
           <button onClick={() => dispatch('decrement')}>-</button>
