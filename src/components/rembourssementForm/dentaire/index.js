@@ -4,7 +4,7 @@ import s from '@/src/components/form/assets/form.module.css'
 const Dentaire = () => {
   return (
     <div className={s.content}>
-      <h3> <h3> 🏥 DENTAIRE</h3></h3>
+      <h3> 🏥 DENTAIRE</h3>
 
       {/* RADIO */}
       <div className="over-hide z-bigger">

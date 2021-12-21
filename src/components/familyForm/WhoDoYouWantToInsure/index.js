@@ -1,14 +1,14 @@
 import React from 'react'
 import s from '@/src/components/form/assets/form.module.css'
 
-const WhoDoYouWantToInsure = () => {
+const WhoDoYouWantToInsure = ({ dispatch }) => {
   return (
     <div className={s.content}>
       <h3>qui souhaitez vous assurer ?</h3>
 
-      {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="insure" id="insure-1" />
+        <input
+          className="checkbox-tools" type="radio" name="insure" id="insure-1" />
         <label className="for-checkbox-tools" htmlFor="insure-1">
           Vous
         </label>
