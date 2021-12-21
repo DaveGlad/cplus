@@ -8,16 +8,16 @@ const Medicaux = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="tools" id="m-1" checked />
+        <input className="checkbox-tools" type="radio" name="tools" id="m-1" />
         <label className="for-checkbox-tools" htmlFor="m-1">
           Economique
         </label>
-        <input className="checkbox-tools" type="radio" name="tools" id="m-2" checked />
+        <input className="checkbox-tools" type="radio" name="tools" id="m-2" />
         <label className="for-checkbox-tools" htmlFor="m-2">
           Intermédiaire
         </label>
 
-        <input className="checkbox-tools" type="radio" name="tools" id="m-3" checked />
+        <input className="checkbox-tools" type="radio" name="tools" id="m-3" />
         <label className="for-checkbox-tools" htmlFor="m-3">
           Optimum
         </label>

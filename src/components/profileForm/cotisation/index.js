@@ -8,16 +8,16 @@ const Cotisation = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-1" checked />
+        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-1" />
         <label className="for-checkbox-tools" htmlFor="cotisation-1">
           Moins de 60
         </label>
-        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-2" checked />
+        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-2" />
         <label className="for-checkbox-tools" htmlFor="cotisation-2">
           60 - 100
         </label>
 
-        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-3" checked />
+        <input className="checkbox-tools" type="radio" name="cotisation" id="cotisation-3" />
         <label className="for-checkbox-tools" htmlFor="cotisation-3">
           100 - 150
         </label>

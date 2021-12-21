@@ -8,21 +8,21 @@ const RegimeConjoint = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-1" checked />
+        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-1" />
         <label className="for-checkbox-tools" htmlFor="regimeonjoint-1">
           Régime générale
         </label>
-        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-2" checked />
+        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-2" />
         <label className="for-checkbox-tools" htmlFor="regimeonjoint-2">
           Régime TNS
         </label>
 
-        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-3" checked />
+        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-3" />
         <label className="for-checkbox-tools" htmlFor="regimeonjoint-3">
           Régime agricole
         </label>
 
-        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-4" checked />
+        <input className="checkbox-tools" type="radio" name="regimeonjoint" id="regimeonjoint-4" />
         <label className="for-checkbox-tools" htmlFor="regimeonjoint-4">
           Alsace moselle
         </label>

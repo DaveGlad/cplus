@@ -8,16 +8,16 @@ const Dentaire = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="d" id="d-1" checked />
+        <input className="checkbox-tools" type="radio" name="d" id="d-1" />
         <label className="for-checkbox-tools" htmlFor="d-1">
           Economique
         </label>
-        <input className="checkbox-tools" type="radio" name="d" id="d-2" checked />
+        <input className="checkbox-tools" type="radio" name="d" id="d-2" />
         <label className="for-checkbox-tools" htmlFor="d-2">
           Intermédiaire
         </label>
 
-        <input className="checkbox-tools" type="radio" name="d" id="d-3" checked />
+        <input className="checkbox-tools" type="radio" name="d" id="d-3" />
         <label className="for-checkbox-tools" htmlFor="d-3">
           Optimum
         </label>

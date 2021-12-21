@@ -341,9 +341,9 @@ button {
   /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
 }
 
-.checkbox-tools:not(:checked)+label:hover {
+/* .checkbox-tools:not(:checked)+label:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 .checkbox-tools:checked+label::before,
 .checkbox-tools:not(:checked)+label::before {

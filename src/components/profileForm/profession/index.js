@@ -8,24 +8,24 @@ const Profession = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="profession" id="profession-1" defaultChecked />
+        <input className="checkbox-tools" type="radio" name="profession" id="profession-1" />
         <label className="for-checkbox-tools" htmlFor="profession-1">
           Salarié
         </label>
-        <input className="checkbox-tools" type="radio" name="profession" id="profession-2" checked />
+        <input className="checkbox-tools" type="radio" name="profession" id="profession-2" />
         <label className="for-checkbox-tools" htmlFor="profession-2">
           Retraité
         </label>
 
-        <input className="checkbox-tools" type="radio" name="profession" id="profession-3" checked />
+        <input className="checkbox-tools" type="radio" name="profession" id="profession-3" />
         <label className="for-checkbox-tools" htmlFor="profession-3">
           Etudiant
         </label>
-        <input className="checkbox-tools" type="radio" name="profession" id="profession-4" checked />
+        <input className="checkbox-tools" type="radio" name="profession" id="profession-4" />
         <label className="for-checkbox-tools" htmlFor="profession-4">
           Auto-entrepreneur
         </label>
-        <input className="checkbox-tools" type="radio" name="profession" id="profession-5" checked />
+        <input className="checkbox-tools" type="radio" name="profession" id="profession-5" />
         <label className="for-checkbox-tools" htmlFor="profession-5">
           Autre
         </label>

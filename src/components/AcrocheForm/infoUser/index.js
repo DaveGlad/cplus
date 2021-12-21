@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './assets/infoUser.module.css'
-
+import Autocomplete from "react-google-autocomplete";
 const InfoUser = () => {
   return (
     <div className={s.content}>
@@ -16,7 +16,12 @@ const InfoUser = () => {
 
       <h3>📍ADRESSE</h3>
       <div className={s.adress}>
-        <input type="text" placeholder='Adresse' />
+        <Autocomplete
+          apiKey='AIzaSyB4IkCzSERF2dIeRuKkmFJfWLSf_g16TiY'
+          onPlaceSelected={(place) => {
+            console.log(place);
+          }}
+          type="text" placeholder='Adresse' />
       </div>
       <div className={s.row}>
         <div className={s.input}>

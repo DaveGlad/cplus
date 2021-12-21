@@ -8,7 +8,7 @@ const Sexe = () => {
 
       <div className="over-hide z-bigger">
         <span style={UserSexe}>👨‍</span>
-        <input className="checkbox-tools" type="radio" name="sexe" id="homme-1" checked />
+        <input className="checkbox-tools" type="radio" name="sexe" id="homme-1" />
         <label className="for-checkbox-tools" htmlFor="homme-1">
           Homme
         </label>

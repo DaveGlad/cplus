@@ -8,20 +8,20 @@ const WhoDoYouWantToInsure = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="insure" id="insure-1" checked />
+        <input className="checkbox-tools" type="radio" name="insure" id="insure-1" />
         <label className="for-checkbox-tools" htmlFor="insure-1">
           Vous
         </label>
-        <input className="checkbox-tools" type="radio" name="insure" id="insure-2" checked />
+        <input className="checkbox-tools" type="radio" name="insure" id="insure-2" />
         <label className="for-checkbox-tools" htmlFor="insure-2">
           Vous <span><br /> et</span> votre conjoint
         </label>
 
-        <input className="checkbox-tools" type="radio" name="insure" id="insure-3" checked />
+        <input className="checkbox-tools" type="radio" name="insure" id="insure-3" />
         <label className="for-checkbox-tools" htmlFor="insure-3">
           Vous et vos enfants
         </label>
-        <input className="checkbox-tools" type="radio" name="insure" id="insure-4" checked />
+        <input className="checkbox-tools" type="radio" name="insure" id="insure-4" />
         <label className="for-checkbox-tools" htmlFor="insure-4">
           Vous, votre conjoint et vos enfants
         </label>

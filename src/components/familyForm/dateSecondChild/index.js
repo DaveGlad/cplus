@@ -6,16 +6,16 @@ const DateSecondChild = () => {
     <div className={s.content}>
       <h3>🗓 DATE DE NAISSANCE DE VOTRE 2EME ENFANT ?</h3>
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-1-s-c" checked />
+        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-1-s-c" />
         <label className="for-checkbox-tools" htmlFor="date-1-s-c">
           jour
         </label>
-        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-2-s-c" checked />
+        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-2-s-c" />
         <label className="for-checkbox-tools" htmlFor="date-2-s-c">
           mois
         </label>
 
-        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-3-s-c" checked />
+        <input className="checkbox-tools" type="radio" name="date-s-c" id="date-3-s-c" />
         <label className="for-checkbox-tools" htmlFor="date-3-s-c">
           année
         </label>

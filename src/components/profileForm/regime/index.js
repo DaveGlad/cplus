@@ -8,16 +8,16 @@ const Regime = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="regime" id="o-1" defaultChecked />
+        <input className="checkbox-tools" type="radio" name="regime" id="o-1" />
         <label className="for-checkbox-tools" htmlFor="o-1">
           Régime générale
         </label>
-        <input className="checkbox-tools" type="radio" name="regime" id="o-2" checked />
+        <input className="checkbox-tools" type="radio" name="regime" id="o-2" />
         <label className="for-checkbox-tools" htmlFor="o-2">
           Régime TNS
         </label>
 
-        <input className="checkbox-tools" type="radio" name="regime" id="o-3" checked />
+        <input className="checkbox-tools" type="radio" name="regime" id="o-3" />
         <label className="for-checkbox-tools" htmlFor="o-3">
           Régime agricole
         </label>

@@ -8,16 +8,16 @@ const Optique = () => {
 
       {/* RADIO */}
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="o" id="o-1" checked />
+        <input className="checkbox-tools" type="radio" name="o" id="o-1" />
         <label className="for-checkbox-tools" htmlFor="o-1">
           Economique
         </label>
-        <input className="checkbox-tools" type="radio" name="o" id="o-2" checked />
+        <input className="checkbox-tools" type="radio" name="o" id="o-2" />
         <label className="for-checkbox-tools" htmlFor="o-2">
           Intermédiaire
         </label>
 
-        <input className="checkbox-tools" type="radio" name="o" id="o-3" checked />
+        <input className="checkbox-tools" type="radio" name="o" id="o-3" />
         <label className="for-checkbox-tools" htmlFor="o-3">
           Optimum
         </label>

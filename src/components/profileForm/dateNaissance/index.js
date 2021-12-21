@@ -7,16 +7,16 @@ const DateNaissance = () => {
     <div className={s.content}>
       <h3> 🗓 VOTRE DATE DE NAISSANCE</h3>
       <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="date" id="date-1" checked />
+        <input className="checkbox-tools" type="radio" name="date" id="date-1" />
         <label className="for-checkbox-tools" htmlFor="date-1">
           jour
         </label>
-        <input className="checkbox-tools" type="radio" name="date" id="date-2" checked />
+        <input className="checkbox-tools" type="radio" name="date" id="date-2" />
         <label className="for-checkbox-tools" htmlFor="date-2">
           mois
         </label>
 
-        <input className="checkbox-tools" type="radio" name="date" id="date-3" checked />
+        <input className="checkbox-tools" type="radio" name="date" id="date-3" />
         <label className="for-checkbox-tools" htmlFor="date-3">
           année
         </label>
