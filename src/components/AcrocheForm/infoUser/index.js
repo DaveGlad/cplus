@@ -17,7 +17,7 @@ const InfoUser = () => {
       <h3>📍ADRESSE</h3>
       <div className={s.adress}>
         <Autocomplete
-          apiKey='AIzaSyDDXHPNnPozBzqWy3hTreGUyn3WQ_Tr4F8'
+          apiKey={process.env.GOOGLE_API_KEY}
           onPlaceSelected={(place) => {
             console.log(place);
           }}

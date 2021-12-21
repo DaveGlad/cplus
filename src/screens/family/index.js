@@ -17,6 +17,8 @@ const initialState = {
   enfant: false,
   faqAnimalDeCompagne: false,
   faqAnimalDeCompagneFalse: false,
+  increment: + 1,
+  decrement: -1,
 }
 
 const reducer = (state, action) => {
@@ -65,6 +67,16 @@ const reducer = (state, action) => {
         ...state,
         faqAnimalDeCompagne: false,
       }
+    case 'increment':
+      if (state?.increment >= 15) {
+        return state?.increment
+      }
+      return state + 1
+    case 'decrement':
+      if (state?.decrement <= 0) {
+        return 0
+      }
+      return state?.decrement - 1;
     default:
       return state;
   }
