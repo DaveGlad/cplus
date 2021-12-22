@@ -53,9 +53,10 @@
 
   .row .input {
     border-radius: 10px;
-    width: 100px;
+    padding-top: 5px;
     line-height: 20px;
-
+    width: 120px;
+    height: 44px;
     font-size: var(--small-font-size);
 
   }

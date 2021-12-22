@@ -17,14 +17,14 @@ const WhoDoYouWantToInsure = ({ dispatch }) => {
         <input
           onClick={() => dispatch({ type: 'vousEtVotreConjoint' })}
           className="checkbox-tools" type="radio" name="insure" id="insure-2" />
-        <label className="for-checkbox-tools" htmlFor="insure-2">
-          Vous <span><br /> et</span> votre conjoint
+        <label className="for-checkbox-tools fixHeightLongText" htmlFor="insure-2">
+          Vous et votre conjoint
         </label>
 
         <input
           onClick={() => dispatch({ type: 'youAndChildren' })}
           className="checkbox-tools" type="radio" name="insure" id="insure-3" />
-        <label className="for-checkbox-tools" htmlFor="insure-3">
+        <label className="for-checkbox-tools fixHeightLongText" htmlFor="insure-3">
           Vous et vos enfants
         </label>
         <input

@@ -22,7 +22,7 @@ const Profession = () => {
           Etudiant
         </label>
         <input className="checkbox-tools" type="radio" name="profession" id="profession-4" />
-        <label className="for-checkbox-tools" htmlFor="profession-4">
+        <label className="for-checkbox-tools fixHeightLongText" htmlFor="profession-4">
           Auto-entrepreneur
         </label>
         <input className="checkbox-tools" type="radio" name="profession" id="profession-5" />
