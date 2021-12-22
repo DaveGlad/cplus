@@ -22,7 +22,7 @@ const DateChild = ({ form, setForm }) => {
     <React.Fragment>
       {
         form?.map((item, index) => (
-          <div className={s.content}>
+          <div className={s.content} key={index}>
             <h3>🗓 DATE DE NAISSANCE DE VOTRE {index + 1}E ENFANT ?</h3>
             <div className={s.row}>
               <div className={s.input}>
