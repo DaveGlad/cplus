@@ -31,7 +31,7 @@ const WhoDoYouWantToInsure = ({ dispatch }) => {
           onClick={() => dispatch({ type: 'family' })}
           className="checkbox-tools" type="radio" name="insure" id="insure-4" />
         <label className="for-checkbox-tools" htmlFor="insure-4">
-          Vous, votre conjoint et vos enfants
+          Famille
         </label>
       </div>
       {/* RADIO */}

@@ -7,8 +7,10 @@ import Form from '@/src/components/form'
 const Home = () => {
 
   const [current, setCurrent] = useState(1)
+  const [skill, setSkill] = useState(10)
   const handleClick = () => {
-    setCurrent(current + 1)
+    setCurrent(prev => prev + 1)
+    setSkill(prev => prev + 22.5)
     window.scrollTo(0, 0);
   }
 
@@ -20,6 +22,7 @@ const Home = () => {
           handleClick={handleClick}
           current={current}
           setCurrent={setCurrent}
+          skill={skill}
         />
       </FormContainer>
     </Container>

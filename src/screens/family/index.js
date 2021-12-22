@@ -7,6 +7,7 @@ import NumberChildren from '@/src/components/familyForm/numberChildren'
 import NumberAnimalCompagne from '@/src/components/familyForm/numberAnimalCompagne'
 import FaqAnimalCompagne from '@/src/components/familyForm/faqAnimalCompagnie'
 import DateChild from '@/src/components/familyForm/dateFirstChild'
+import SkillBar from '@/src/components/skillBar'
 
 const initialState = {
   vous: false,
@@ -81,7 +82,7 @@ const reducer = (state, action) => {
   }
 }
 
-const Family = () => {
+const Family = ({ skill }) => {
   const [form, setForm] = useState([])
   const handleAddLink = (e) => {
     const childrenState = {
@@ -105,7 +106,7 @@ const Family = () => {
   return (
     <React.Fragment>
       <h2 className={s.title}>3. VOTRE FAMILLE</h2>
-      <Image src="/images/widthStepProfile.svg" width={250} height={20} />
+      <SkillBar skill={skill} />
       <h2 className={s.title}>Dites-nous plus sur votre famille</h2>
 
       <WhoDoYouWantToInsure dispatch={dispatch} />

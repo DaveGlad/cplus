@@ -5,12 +5,12 @@ import Medicaux from '@/src/components/rembourssementForm/medicaux'
 import Optique from '@/src/components/rembourssementForm/optique'
 
 import s from './assets/remboursement.module.css'
-import Image from 'next/image'
-const Remboursement = () => {
+import SkillBar from '@/src/components/skillBar'
+const Remboursement = ({ skill }) => {
   return (
     <React.Fragment>
       <h2 className={s.title}>1. VOS BESOINS</h2>
-      <Image src="/images/Frame 620.svg" width={250} height={20} />
+      <SkillBar skill={skill} />
       <h2 className={s.title}>Quel est le niveau de remboursement souhaité ?</h2>
       <Medicaux />
       <Hospitalisation />

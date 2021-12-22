@@ -5,7 +5,7 @@ import Profile from '@/src/screens/profile'
 import Family from '@/src/screens/family'
 import Accroche from '@/src/screens/acroche'
 
-const Form = ({ handleClick, current, setCurrent }) => {
+const Form = ({ handleClick, skill, current, setCurrent }) => {
 
   const handleClickPrev = () => {
     setCurrent(current - 1)
@@ -15,11 +15,10 @@ const Form = ({ handleClick, current, setCurrent }) => {
     <form action="" className={s.form}
       onSubmit={(e) => e.preventDefault()}>
 
-      {current === 1 && <Remboursement />}
-      {current === 2 && <Profile />}
-      {current === 3 && <Family />}
-      {current === 4 && <Accroche />}
-
+      {current === 1 && <Remboursement skill={skill} />}
+      {current === 2 && <Profile skill={skill} />}
+      {current === 3 && <Family skill={skill} />}
+      {current === 4 && <Accroche skill={skill} />}
 
       <div className={s.row}>
         <div className={s.left}>
