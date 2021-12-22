@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react'
 import s from '@/src/components/form/assets/form.module.css'
+import { motion } from 'framer-motion'
 
 const initialState = 0
 
@@ -27,7 +28,7 @@ const NumberChildren = ({ handleAddLink, handleRemoveField }) => {
     handleAddLink()
   }
   const removeField = (index) => {
-    dispatch('increment')
+    dispatch('decrement')
     handleRemoveField(index)
   }
   return (
@@ -35,9 +36,19 @@ const NumberChildren = ({ handleAddLink, handleRemoveField }) => {
       <h3>Nombre d’enfants à assurer ?</h3>
       <div className={s.count}>
         <div className={s.row}>
-          <button onClick={removeField}>-</button>
+          <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={removeField}>
+            -
+          </motion.button>
           <button>{count}</button>
-          <button onClick={handlClickAdd}>+</button>
+          <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={handlClickAdd}>
+            +
+          </motion.button>
         </div>
       </div>
     </div>

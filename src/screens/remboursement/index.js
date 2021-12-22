@@ -14,7 +14,7 @@ const Remboursement = ({ skill }) => {
     <React.Fragment>
       <h2 className={s.title}>1. VOS BESOINS</h2>
       <SkillBar skill={skill} />
-      <h2 className={s.title}>Quel est le niveau de remboursement souhaité ?</h2>
+      <h2 className={s.sub__title}>Quel est le niveau de remboursement souhaité ?</h2>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{

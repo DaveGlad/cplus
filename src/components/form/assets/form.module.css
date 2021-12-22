@@ -111,4 +111,9 @@
     font-size: var(--normal-font-size);
   }
 
+  .content {
+    margin: 5% 0;
+  }
+
+
 }

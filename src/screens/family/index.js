@@ -8,7 +8,7 @@ import NumberAnimalCompagne from '@/src/components/familyForm/numberAnimalCompag
 import FaqAnimalCompagne from '@/src/components/familyForm/faqAnimalCompagnie'
 import DateChild from '@/src/components/familyForm/dateFirstChild'
 import SkillBar from '@/src/components/skillBar'
-
+import { motion } from 'framer-motion'
 const initialState = {
   vous: false,
   vousEtVotreConjoint: false,
@@ -109,20 +109,81 @@ const Family = ({ skill }) => {
       <SkillBar skill={skill} />
       <h2 className={s.title}>Dites-nous plus sur votre famille</h2>
 
-      <WhoDoYouWantToInsure dispatch={dispatch} />
-      {state?.vousEtVotreConjoint && <RegimeConjoint />}
-      {state?.enfant && <NumberChildren
-        handleAddLink={handleAddLink}
-        handleRemoveField={handleRemoveField}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          y: -20,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 2.8
+          }
+        }}
+        viewport={{ once: true }}
+      >
+        <WhoDoYouWantToInsure dispatch={dispatch} />
+        {state?.vousEtVotreConjoint && <RegimeConjoint />}
+      </motion.div>
 
-      />}
-      {state?.enfant && <DateChild
-        form={form}
-        setForm={setForm}
-        handleRemoveField={handleRemoveField}
-      />}
-      <FaqAnimalCompagne dispatch={dispatch} />
-      {state?.faqAnimalDeCompagne && <NumberAnimalCompagne />}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          y: -20,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 2.8
+          }
+        }}
+        viewport={{ once: true }}
+      >
+        {state?.enfant && <NumberChildren
+          handleAddLink={handleAddLink}
+          handleRemoveField={handleRemoveField}
+
+        />}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          y: -20,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 2.8
+          }
+        }}
+        viewport={{ once: true }}
+      >
+        {state?.enfant && <DateChild
+          form={form}
+          setForm={setForm}
+          handleRemoveField={handleRemoveField}
+        />}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          y: -20,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 2.8
+          }
+        }}
+        viewport={{ once: true }}
+      >
+        <FaqAnimalCompagne dispatch={dispatch} />
+        {state?.faqAnimalDeCompagne && <NumberAnimalCompagne />}
+
+      </motion.div>
+
     </React.Fragment>
   )
 }
