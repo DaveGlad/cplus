@@ -61,3 +61,16 @@
   font-size: var(--smaller-font-size);
   margin-bottom: 5%;
 }
+
+@media screen and (min-width: 960px) {
+  .row .input {
+    width: 60px;
+  }
+
+  .content h3 {
+    font-size: var(--h3-font-size) !important;
+    text-transform: uppercase;
+    padding: 3% 0;
+    font-weight: 400;
+  }
+}

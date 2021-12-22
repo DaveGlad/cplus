@@ -1,24 +1,20 @@
 import React from 'react'
-import s from '@/src/components/form/assets/form.module.css'
+import s from '@/src/components/familyForm/dateFirstChild/assets/childe.module.css'
 
 const DateEffet = () => {
   return (
     <div className={s.content}>
       <h3>🗓 LA DATE d’EFFET SOUHAITEE ?</h3>
-      <div className="over-hide z-bigger">
-        <input className="checkbox-tools" type="radio" name="date-e" id="date-1-e" />
-        <label className="for-checkbox-tools" htmlFor="date-1-e">
-          jour
-        </label>
-        <input className="checkbox-tools" type="radio" name="date-e" id="date-2-e" />
-        <label className="for-checkbox-tools" htmlFor="date-2-e">
-          mois
-        </label>
-
-        <input className="checkbox-tools" type="radio" name="date-e" id="date-3-e" />
-        <label className="for-checkbox-tools" htmlFor="date-3-e">
-          année
-        </label>
+      <div className={s.row}>
+        <div className={s.input}>
+          <input type="number" name="" id="" placeholder='jour' />
+        </div>
+        <div className={s.input}>
+          <input type="number" name="" id="" placeholder='mois' />
+        </div>
+        <div className={s.input}>
+          <input type="number" name="" id="" placeholder='année' />
+        </div>
       </div>
     </div>
   )

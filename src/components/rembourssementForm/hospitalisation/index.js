@@ -21,6 +21,10 @@ const Hospitalisation = () => {
         <label className="for-checkbox-tools" htmlFor="h-3">
           Optimum
         </label>
+        <input className="checkbox-tools" type="radio" name="h" id="h-4" />
+        <label className="for-checkbox-tools" htmlFor="h-4">
+          Maximum
+        </label>
       </div>
       {/* RADIO */}
     </div>

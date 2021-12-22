@@ -36,6 +36,7 @@
   outline: none;
   color: var(--title-color);
   padding: 5px;
+  text-align: center;
 }
 
 .adress input::placeholder,
@@ -61,4 +62,18 @@
   outline: none;
   color: var(--title-color);
   padding: 5px;
+}
+
+@media screen and (min-width: 960px) {
+
+  .content h3 {
+    font-size: var(--h3-font-size) !important;
+    font-weight: 400;
+  }
+
+  .adress input::placeholder,
+  .input input::placeholder {
+    font-size: var(--normal-font-size);
+  }
+
 }

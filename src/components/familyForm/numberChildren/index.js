@@ -19,19 +19,23 @@ const reducer = (current, action) => {
       break;
   }
 }
-const NumberChildren = ({ handleAddLink }) => {
+const NumberChildren = ({ handleAddLink, handleRemoveField }) => {
 
   const [count, dispatch] = useReducer(reducer, initialState,)
   const handlClickAdd = () => {
     dispatch('increment')
     handleAddLink()
   }
+  const removeField = (index) => {
+    dispatch('increment')
+    handleRemoveField(index)
+  }
   return (
     <div className={s.content}>
       <h3>Nombre d’enfants à assurer ?</h3>
       <div className={s.count}>
         <div className={s.row}>
-          <button onClick={() => dispatch('decrement')}>-</button>
+          <button onClick={removeField}>-</button>
           <button>{count}</button>
           <button onClick={handlClickAdd}>+</button>
         </div>

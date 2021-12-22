@@ -10,7 +10,7 @@ const Regime = () => {
       <div className="over-hide z-bigger">
         <input className="checkbox-tools" type="radio" name="regime" id="o-1" />
         <label className="for-checkbox-tools" htmlFor="o-1">
-          Régime générale
+          Générale
         </label>
         <input className="checkbox-tools" type="radio" name="regime" id="o-2" />
         <label className="for-checkbox-tools" htmlFor="o-2">
@@ -19,7 +19,11 @@ const Regime = () => {
 
         <input className="checkbox-tools" type="radio" name="regime" id="o-3" />
         <label className="for-checkbox-tools" htmlFor="o-3">
-          Régime agricole
+          Agricole
+        </label>
+        <input className="checkbox-tools" type="radio" name="regime" id="o-4" />
+        <label className="for-checkbox-tools" htmlFor="o-4">
+          Alsace moselle
         </label>
       </div>
       {/* RADIO */}

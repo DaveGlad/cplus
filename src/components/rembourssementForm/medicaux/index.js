@@ -21,6 +21,11 @@ const Medicaux = () => {
         <label className="for-checkbox-tools" htmlFor="m-3">
           Optimum
         </label>
+
+        <input className="checkbox-tools" type="radio" name="tools" id="m-4" />
+        <label className="for-checkbox-tools" htmlFor="m-4">
+          Maximum
+        </label>
       </div>
       {/* RADIO */}
     </div>

@@ -14,3 +14,15 @@
 .card h3 span {
   font-weight: 400;
 }
+
+@media screen and (min-width: 960px) {
+  .card img {
+    width: 60px !important;
+  }
+
+  .card h3 {
+    font-size: var(--normal-font-size) !important;
+  }
+
+
+}

@@ -1,20 +1,20 @@
 .header {
   width: 100%;
-  height: 60px;
+  height: 100%;
   background: #fff;
-  color: aqua;
   display: flex;
   align-items: center;
 }
 
-.logo,
-.logo_center {
-  width: 90px;
-  height: 100%;
+.logo_center,
+.logo {
+  text-align: left;
+  width: 95px;
 }
 
 .contact {
-  width: 50px;
+  display: flex;
+  width: 80px;
 }
 
 .menu {
@@ -25,37 +25,63 @@
   align-items: center;
 }
 
-.contact {
-  width: 65px;
+.contact .icons {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin: 0 5px;
+  margin-bottom: 10px;
 }
 
-.icons {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
+.contact .icons img {
+  width: 25px !important;
+}
+
+.contact .icons a {
+  margin-left: 10px;
+  padding: 5px 10px;
+  width: 180px;
+  background: var(--title-color);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500 !important;
+  display: none;
+  font-size: var(--small-font-size);
+}
+
+.contact .icons .call {
+  background: #A3CE41;
+  color: var(--first-color);
 }
 
 @media screen and (min-width: 960px) {
   .header {
-    height: 100px;
+    height: 150px;
+  }
+
+  .logo_center,
+  .logo {
+    text-align: left;
+    width: auto;
+  }
+
+  .contact .icons a {
+    display: block;
+  }
+
+  .contact,
+  .logo_center {
+    text-align: right;
   }
 
   .contact {
-    width: 150px;
-
+    display: block;
+    width: auto;
   }
 
-  .logo_center {
-    width: 120px;
-    height: 100%;
-  }
 
-  .logo {
-    width: 180px;
-  }
 
+  .contact .icons img {
+    width: auto !important;
+  }
 }

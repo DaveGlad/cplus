@@ -11,9 +11,11 @@ const Assuarnce = ({ current }) => {
         </div>
 
         {current === 1 && (
-          <Grid>
-            <Card />
-          </Grid>
+          <div className={s.border}>
+            <Grid>
+              <Card />
+            </Grid>
+          </div>
         )}
 
       </div>

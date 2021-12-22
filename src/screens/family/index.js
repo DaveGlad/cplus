@@ -83,7 +83,6 @@ const reducer = (state, action) => {
 
 const Family = () => {
   const [form, setForm] = useState([])
-
   const handleAddLink = (e) => {
     const childrenState = {
       t: "",
@@ -91,6 +90,13 @@ const Family = () => {
     }
 
     setForm(prev => [...prev, childrenState])
+  }
+
+  //Remove Filed
+  const handleRemoveField = (index) => {
+    setForm(prev => prev.filter((item) => {
+      return item !== prev[index]
+    }))
   }
 
   //reducer
@@ -106,10 +112,13 @@ const Family = () => {
       {state?.vousEtVotreConjoint && <RegimeConjoint />}
       {state?.enfant && <NumberChildren
         handleAddLink={handleAddLink}
+        handleRemoveField={handleRemoveField}
+
       />}
       {state?.enfant && <DateChild
         form={form}
         setForm={setForm}
+        handleRemoveField={handleRemoveField}
       />}
       <FaqAnimalCompagne dispatch={dispatch} />
       {state?.faqAnimalDeCompagne && <NumberAnimalCompagne />}

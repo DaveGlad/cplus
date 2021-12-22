@@ -21,6 +21,11 @@ const Dentaire = () => {
         <label className="for-checkbox-tools" htmlFor="d-3">
           Optimum
         </label>
+
+        <input className="checkbox-tools" type="radio" name="d" id="d-4" />
+        <label className="for-checkbox-tools" htmlFor="d-4">
+          Maximum
+        </label>
       </div>
       {/* RADIO */}
     </div>

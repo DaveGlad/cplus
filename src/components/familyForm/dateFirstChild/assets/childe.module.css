@@ -44,3 +44,29 @@
 .row>div:last-child {
   width: 90px;
 }
+
+@media screen and (min-width: 960px) {
+  .content h3 {
+    font-size: var(--h3-font-size) !important;
+    font-weight: 400;
+  }
+
+  .row .input {
+    border-radius: 10px;
+    width: 100px;
+    line-height: 20px;
+
+    font-size: var(--small-font-size);
+
+  }
+
+  .row>div input {
+    font-size: var(--normal-font-size);
+  }
+
+  .row>div input::placeholder {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+  }
+
+}

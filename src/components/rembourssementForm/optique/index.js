@@ -21,6 +21,10 @@ const Optique = () => {
         <label className="for-checkbox-tools" htmlFor="o-3">
           Optimum
         </label>
+        <input className="checkbox-tools" type="radio" name="o" id="o-4" />
+        <label className="for-checkbox-tools" htmlFor="o-4">
+          Maximum
+        </label>
       </div>
       {/* RADIO */}
     </div>
